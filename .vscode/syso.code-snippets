@@ -1,0 +1,26 @@
+{
+	
+	"exicute main": {
+		"prefix": "psvm",
+		"body": "public static void main(String[] args){$1}",
+		"description": "public static void main"
+	},
+	"print in java": {
+		"prefix": "sop",
+		"body": "System.out.println($1);",
+		"description": "System.out.println"
+	},
+	"scanner in java": {
+		"prefix": "sca",
+		"body": "Scanner $1=new Scanner(System.in);",
+		"description": "Scanner in java"
+	},
+	"for loop in java": {
+		"prefix": "fe",
+		"body": "for(int $1;$2;$3){}",
+		"description": "for in java"
+	}
+	
+
+
+}
