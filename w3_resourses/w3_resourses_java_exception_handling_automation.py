@@ -1,0 +1,34 @@
+import time
+import os
+import webbrowser
+j=0
+i=1
+l= ['https://www.w3resource.com/java-exercises/array/java-array-exercise-1.php', 'https://www.w3resource.com/java-exercises/array/java-array-exercise-2.php', 'https://www.w3resource.com/java-exercises/array/java-array-exercise-3.php', 'https://www.w3resource.com/java-exercises/array/java-array-exercise-4.php', 'https://www.w3resource.com/java-exercises/array/java-array-exercise-5.php', 'https://www.w3resource.com/java-exercises/array/java-array-exercise-6.php', 'https://www.w3resource.com/java-exercises/array/java-array-exercise-7.php', 'https://www.w3resource.com/java-exercises/array/java-array-exercise-8.php', 'https://www.w3resource.com/java-exercises/array/java-array-exercise-9.php', 'https://www.w3resource.com/java-exercises/array/java-array-exercise-10.php', 'https://www.w3resource.com/java-exercises/array/java-array-exercise-11.php', 'https://www.w3resource.com/java-exercises/array/java-array-exercise-12.php', 'https://www.w3resource.com/java-exercises/array/java-array-exercise-13.php', 'https://www.w3resource.com/java-exercises/array/java-array-exercise-14.php', 'https://www.w3resource.com/java-exercises/array/java-array-exercise-15.php', 'https://www.w3resource.com/java-exercises/array/java-array-exercise-16.php', 'https://www.w3resource.com/java-exercises/array/java-array-exercise-17.php', 'https://www.w3resource.com/java-exercises/array/java-array-exercise-18.php', 'https://www.w3resource.com/java-exercises/array/java-array-exercise-19.php', 'https://www.w3resource.com/java-exercises/array/java-array-exercise-20.php', 'https://www.w3resource.com/java-exercises/array/java-array-exercise-21.php', 'https://www.w3resource.com/java-exercises/array/java-array-exercise-22.php', 'https://www.w3resource.com/java-exercises/array/java-array-exercise-23.php', 'https://www.w3resource.com/java-exercises/array/java-array-exercise-24.php', 'https://www.w3resource.com/java-exercises/array/java-array-exercise-25.php', 'https://www.w3resource.com/java-exercises/array/java-array-exercise-26.php', 'https://www.w3resource.com/java-exercises/array/java-array-exercise-27.php', 'https://www.w3resource.com/java-exercises/array/java-array-exercise-28.php', 'https://www.w3resource.com/java-exercises/array/java-array-exercise-29.php', 'https://www.w3resource.com/java-exercises/array/java-array-exercise-30.php', 'https://www.w3resource.com/java-exercises/array/java-array-exercise-31.php', 'https://www.w3resource.com/java-exercises/array/java-array-exercise-32.php', 'https://www.w3resource.com/java-exercises/array/java-array-exercise-33.php', 'https://www.w3resource.com/java-exercises/array/java-array-exercise-34.php', 'https://www.w3resource.com/java-exercises/array/java-array-exercise-35.php', 'https://www.w3resource.com/java-exercises/array/java-array-exercise-36.php', 'https://www.w3resource.com/java-exercises/array/java-array-exercise-37.php', 'https://www.w3resource.com/java-exercises/array/java-array-exercise-38.php', 'https://www.w3resource.com/java-exercises/array/java-array-exercise-39.php', 'https://www.w3resource.com/java-exercises/array/java-array-exercise-40.php', 'https://www.w3resource.com/java-exercises/array/java-array-exercise-41.php', 'https://www.w3resource.com/java-exercises/array/java-array-exercise-42.php', 'https://www.w3resource.com/java-exercises/array/java-array-exercise-43.php', 'https://www.w3resource.com/java-exercises/array/java-array-exercise-44.php', 'https://www.w3resource.com/java-exercises/array/java-array-exercise-45.php', 'https://www.w3resource.com/java-exercises/array/java-array-exercise-46.php', 'https://www.w3resource.com/java-exercises/array/java-array-exercise-47.php', 'https://www.w3resource.com/java-exercises/array/java-array-exercise-48.php', 'https://www.w3resource.com/java-exercises/array/java-array-exercise-49.php', 'https://www.w3resource.com/java-exercises/array/java-array-exercise-50.php', 'https://www.w3resource.com/java-exercises/array/java-array-exercise-51.php', 'https://www.w3resource.com/java-exercises/array/java-array-exercise-52.php', 'https://www.w3resource.com/java-exercises/array/java-array-exercise-53.php', 'https://www.w3resource.com/java-exercises/array/java-array-exercise-54.php', 'https://www.w3resource.com/java-exercises/array/java-array-exercise-55.php', 'https://www.w3resource.com/java-exercises/array/java-array-exercise-56.php', 
+'https://www.w3resource.com/java-exercises/array/java-array-exercise-57.php', 'https://www.w3resource.com/java-exercises/array/java-array-exercise-58.php', 'https://www.w3resource.com/java-exercises/array/java-array-exercise-59.php', 'https://www.w3resource.com/java-exercises/array/java-array-exercise-60.php', 'https://www.w3resource.com/java-exercises/array/java-array-exercise-61.php', 'https://www.w3resource.com/java-exercises/array/java-array-exercise-62.php', 'https://www.w3resource.com/java-exercises/array/java-array-exercise-63.php', 'https://www.w3resource.com/java-exercises/array/java-array-exercise-64.php', 'https://www.w3resource.com/java-exercises/array/java-array-exercise-65.php', 'https://www.w3resource.com/java-exercises/array/java-array-exercise-66.php', 'https://www.w3resource.com/java-exercises/array/java-array-exercise-67.php', 'https://www.w3resource.com/java-exercises/array/java-array-exercise-68.php', 'https://www.w3resource.com/java-exercises/array/java-array-exercise-69.php', 'https://www.w3resource.com/java-exercises/array/java-array-exercise-70.php', 'https://www.w3resource.com/java-exercises/array/java-array-exercise-71.php', 'https://www.w3resource.com/java-exercises/array/java-array-exercise-72.php', 'https://www.w3resource.com/java-exercises/array/java-array-exercise-73.php', 'https://www.w3resource.com/java-exercises/array/java-array-exercise-74.php', 'https://www.w3resource.com/java-exercises/array/java-array-exercise-75.php', 'https://www.w3resource.com/java-exercises/array/java-array-exercise-76.php', 'https://www.w3resource.com/java-exercises/array/java-array-exercise-77.php', 'https://www.w3resource.com/java-exercises/array/java-array-exercise-78.php', 'https://www.w3resource.com/java-exercises/array/java-array-exercise-79.php']
+# p=[]
+# for i in k:
+#     if i not in p:
+#         p.append(i)
+
+# l=[]
+# for i in p:
+#     if  i not in l:
+#         l.append(i)
+# print(l)
+while j <len(l):
+    while i==1:
+        url=l[j]
+        def countdown(time_sec):
+            global j
+            while time_sec:
+                mins, secs = divmod(time_sec, 60)
+                timeformat = '{:02d}:{:02d}'.format(mins, secs)
+                print(timeformat, end='\r')
+                time.sleep(1)
+                time_sec -= 1
+            s=1
+            webbrowser.open(url,new=s)
+            print(j)
+            j=j+1
+            return j
+        t=countdown(6)
