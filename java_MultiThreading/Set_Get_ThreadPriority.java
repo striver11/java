@@ -36,11 +36,17 @@ public class Set_Get_ThreadPriority {
 	{
 		System.out.print(i);
 	}
-	
-	
-	
-	
-
 	}
 
 }
+
+//
+//output:
+//	default priority of main Thread  5
+//	Default priority of t1 thread  5
+//	012345678910
+//
+//	priority of main Thread after changing  7
+//	priority of t1 thread after changing 3
+//
+//	abcdefg
