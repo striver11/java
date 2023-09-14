@@ -2,7 +2,7 @@ package MUltiThreading;
 
 
 //produces irregular output because the m1() is Sychronized static method so it requires CLASS LEVEL LOCK  to work
-//m2() is non-static method so it requires no lock so it might come in middle and exicue
+//m2() is non-static and non-synchronized method so it requires no lock so it might come in middle and exicue
 
 
 //output:	THE OUTPUR IS IRREGULAR
