@@ -21,6 +21,8 @@ public class Finding_number_of_occurence_of_character_in_string_using_HashMap {
 			 if(map.containsKey(c))
 			 {
 				 map.put(c,map.get(c)+1);
+				 //we can use the replace here
+				  //map.replace(c,map.get(c)+1);
 			 }
 			 else
 			 {
