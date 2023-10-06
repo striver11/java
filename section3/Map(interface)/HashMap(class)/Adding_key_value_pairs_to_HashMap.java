@@ -1,6 +1,11 @@
 package HashMap3;
 import java.util.*;
 
+// if we don't write the below import it will raise the error at line 40 and 41 why	
+import java.util.Map.Entry;
+
+
+
 public class Adding_key_value_pairs_to_HashMap {
 
 	public static void main(String[] args) {
@@ -27,10 +32,26 @@ public class Adding_key_value_pairs_to_HashMap {
 		//printing the HashMap as key value pair using foreach loop
 		System.err.println("printing the HashMap as key value pair using foreach loop");
 		
+		System.err.println("learn more about Entry and Map.Entry interface");
 		for(Map.Entry<String, Integer> m:map1.entrySet())
 		{
 			System.out.println(m.getKey()+"----->"+m.getValue());
 		}
+		
+		
+		System.out.println("creating Set to store the values of represented as instances of Map.Entry<String, Integer>.");
+		 Set<Entry<String, Integer>> entrySet = map1.entrySet();
+		 
+		 System.err.println("printing entrySet");
+		 System.out.println(entrySet);
+		 
+		 System.out.println();
+		 for (Entry<String, Integer> entry : entrySet) 
+	        {
+	            System.out.println(entry.getKey()+" : "+entry.getValue());
+	        }
+	         
+		
 		
 		//creating another HashMap
 		HashMap<String,Integer> map2=new HashMap<String,Integer>();
@@ -52,18 +73,26 @@ public class Adding_key_value_pairs_to_HashMap {
 }
 
 //output:
-//	pinting the HashMap
-//	{python=80, java=65, c=40, javascript=30, sql=60}
+//pinting the HashMap
+//{python=80, java=65, c=40, javascript=30, sql=60}
 //
 //
-//	printing the HashMap as key value pair using foreach loop
-//	python----->80
-//	java----->65
-//	c----->40
-//	javascript----->30
-//	sql----->60
+//printing the HashMap as key value pair using foreach loop
+//learn more about Entry and Map.Entry interface
+//python----->80
+//java----->65
+//c----->40
+//javascript----->30
+//sql----->60
+//creating Set to store the values of represented as instances of Map.Entry<String, Integer>.
+//printing entrySet
+//[python=80, java=65, c=40, javascript=30, sql=60]
 //
-//	printing the map2
-//	{python=80, java=65, c=40, react=20, javascript=30, ruby=0, sql=60}
-
-
+//python : 80
+//java : 65
+//c : 40
+//javascript : 30
+//sql : 60
+//
+//printing the map2
+//{python=80, java=65, c=40, react=20, javascript=30, ruby=0, sql=60}
