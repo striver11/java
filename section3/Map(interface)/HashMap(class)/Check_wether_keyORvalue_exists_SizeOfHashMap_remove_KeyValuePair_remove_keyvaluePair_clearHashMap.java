@@ -41,8 +41,10 @@ public class Check_wether_keyORvalue_exists_SizeOfHashMap_remove_KeyValuePair_re
 					
 					
 					System.err.println("removing key value from The HashMap");
-					System.out.println(map1.remove("a", map1));
+					//here the key will be removed if and only if key is mapped with value if not mapped it will not remove
+					System.out.println(map1.remove("a", 3));
 					System.out.println(map1.remove("c"));
+					System.out.println("after removing the elements the HashMap is :"+map1);
 					
 					
 					//clearing the HashMap
@@ -72,6 +74,6 @@ public class Check_wether_keyORvalue_exists_SizeOfHashMap_remove_KeyValuePair_re
 //	removing key value from The HashMap
 //	false
 //	3
+//	after removing the elements the HashMap is :{a=1, b=2, d=4}
 //	the size of HashMap after clearing the HashMap for the reuse :0
-
 
