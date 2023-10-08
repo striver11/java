@@ -1,3 +1,6 @@
+package star_triangle_patterns;
+import java.util.*;
+
 8
               * 
             * * 
@@ -8,7 +11,8 @@
   * * * * * * * 
 * * * * * * * *
 
-import java.util.*;
+
+
 public class Right_rightAngle_triangle {
 
 	public static void main(String[] args) {
