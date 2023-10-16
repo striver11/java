@@ -1,16 +1,28 @@
-package PhoneBook;
 
+//Singleton Class:
+//	1.the class which allows only one object creation that class is considered as singleton class
+//						or
+//	1.Singleton class is a java class design pattern which allows only one object creation
+//	
+//	Things needed to create Singleton Class
+//		1.static classType variable intialized with null
+//		2.private constructor
+//		3.static method with classType returnType
+//		4.control statement or decisition making statement
+//		
+//		
+		
 class SingletonClass
 {
-	static SingletonClass instance=null;
-	private SingletonClass()
+	static SingletonClass instance=null;		//1.static classType variable intialized with null
+	private SingletonClass()					//2.private constructor
 	{
 		System.out.println("these are the elements present inside the SingletonClass Private constructor");
 	}
 	
-	public static SingletonClass getInstance()
+	public static SingletonClass getInstance()	//3.static method with classType returnType
 	{
-		if(instance==null)
+		if(instance==null)						//4.control statement or decisition making statement
 		{
 			instance=new SingletonClass();
 		}
